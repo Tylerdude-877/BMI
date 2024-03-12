@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate your BMI</title>
+    <link rel="stylesheet" href="./styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/bmi-icon" href="https://img.icons8.com/?size=48&id=qrOXrfUDKkOX&format=png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1 id="title">BMI Calculator</h1>
+    </header>
+    <main id="main">
+        <div class="bmi_container">
+            <div class="bmi_sub_part">
+                <input id="input_height" name="height" type="text"  placeholder="Enter your height(m)">
+                <input id="input_weight" name="weight" type="text"  placeholder="Enter your weight(kg)">
+            </div>
+            <div class="bmi_sub_part">
+                <button type="submit" id="calculate_btn" onclick="bmiCal()">Calculate BMI</button>
+            </div>
+            <div class="bmi_sub_part">
+                <p id="display"></p>
+            </div>
+            <div class="des">
+                <h2>BMI Categories:</h2>
+                <ul>
+                    <li>Underweight = < 18.5</li>
+                    <li>Normal weight = 18.5–24.9</li>
+                    <li>Overweight = 25–29.9</li>
+                    <li>Obesity = BMI of 30 or greater</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+<footer id="footer">
+    <p>@Copyright | BMI Calculator | 2024 | Reserved 
+    </p>
+    <span class="designer">Designed By TylerDude</span>
+</footer>
+</html>
